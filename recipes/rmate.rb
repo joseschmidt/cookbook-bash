@@ -24,4 +24,4 @@ cookbook_file '/usr/local/bin/rmate' do
   owner   'root'
   group   'root'
   mode    '0755'
-end # cookbook_file '/usr/local/bin/rmate'
+end # cookbook_file

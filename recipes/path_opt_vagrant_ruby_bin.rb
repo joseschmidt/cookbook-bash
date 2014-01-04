@@ -21,4 +21,4 @@
 
 file '/etc/profile.d/path_opt_vagrant_ruby_bin.sh' do
   action :delete
-end
+end # file

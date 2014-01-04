@@ -21,4 +21,4 @@
 
 file '/etc/profile.d/path_usr_sbin.sh' do
   action :delete
-end
+end # file
