@@ -1,6 +1,6 @@
 # Contributing
 
-1. [Fork the repository](fork) on GitHub
+1. Fork the repository on GitHub
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
     - include specs with adequate coverage
