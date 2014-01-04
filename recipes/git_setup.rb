@@ -24,7 +24,7 @@ cookbook_file '/etc/gitconfig' do
   owner  'root'
   group  'root'
   mode   '0644'
-end # cookbook_file '/etc/gitconfig'
+end # cookbook_file
 
 
 # install git completion script
@@ -33,7 +33,7 @@ remote_file '/etc/profile.d/git-completion.sh' do
   owner  'root'
   group  'root'
   mode   '0644'
-end # remote_file '/etc/profile.d/git-completion.bash'
+end # remote_file
 
 
 # install git prompt script
@@ -42,4 +42,4 @@ remote_file '/etc/profile.d/git-prompt.sh' do
   owner  'root'
   group  'root'
   mode   '0644'
-end # remote_file '/etc/profile.d/git-prompt.sh'
+end # remote_file

@@ -6,6 +6,6 @@ describe 'bash::path_sbin' do
   it 'should delete /etc/profile.d/path_sbin.sh' do
     file = '/etc/profile.d/path_sbin.sh'
     chef_run.should delete_file file
-  end # it 'should delete /etc/profile.d/path_sbin.sh'
+  end # it
 
-end # describe 'bash::path_sbin'
+end # describe

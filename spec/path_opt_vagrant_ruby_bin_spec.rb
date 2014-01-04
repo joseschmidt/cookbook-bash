@@ -6,6 +6,6 @@ describe 'bash::path_opt_vagrant_ruby_bin' do
   it 'should delete /etc/profile.d/path_opt_vagrant_ruby_bin.sh' do
     file = '/etc/profile.d/path_opt_vagrant_ruby_bin.sh'
     chef_run.should delete_file file
-  end # it 'should delete /etc/profile.d/path_opt_vagrant_ruby_bin.sh'
+  end # it
 
-end # describe 'bash::path_opt_vagrant_ruby_bin'
+end # describe

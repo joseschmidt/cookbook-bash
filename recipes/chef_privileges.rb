@@ -23,4 +23,4 @@ file '/etc/chef/encrypted_data_bag_secret' do
   owner 'root'
   group 'root'
   mode  '0600'
-end # file '/etc/chef/encrypted_data_bag_secret'
+end # file

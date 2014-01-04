@@ -16,4 +16,4 @@ describe 'bash::profile' do
     expect(chef_run.template(file).group).to eq('root')
   end # it
 
-end # describe 'bash::profile'
+end # describe

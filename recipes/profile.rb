@@ -28,4 +28,4 @@ template '/etc/profile.d/jhx_profile.sh' do |t|
       gsub('@hostname', node['hostname'])
   )
   action  :create
-end
+end # template
