@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'bash::chef_privileges' do
   let :chef_run do
-    ChefSpec::ChefRunner.new.converge 'bash::chef_privileges'
+    ChefSpec::Runner.new.converge 'bash::chef_privileges'
   end # let :chef_run
 
   it 'should create file owned by root:root' do

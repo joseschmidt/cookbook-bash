@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'bash::default' do
   let(:chef_run) do
-    ChefSpec::ChefRunner.new do |node|
+    ChefSpec::Runner.new do |node|
       node.set['file'] = {
         'header' => ''
       }
