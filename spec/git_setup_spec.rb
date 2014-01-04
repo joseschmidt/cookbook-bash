@@ -1,7 +1,8 @@
+# coding: utf-8
 require 'spec_helper'
 
 describe 'bash::git_setup' do
-  let(:chef_run){ ChefSpec::Runner.new.converge(described_recipe) }
+  let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
 
   it 'should create /etc/gitconfig owned by root:root' do
     file = '/etc/gitconfig'

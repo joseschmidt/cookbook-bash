@@ -1,3 +1,4 @@
+# coding: utf-8
 #
 # Cookbook Name:: bash
 # Recipe:: profile
@@ -24,8 +25,8 @@ template '/etc/profile.d/jhx_profile.sh' do |t|
   group   'root'
   mode    '0644'
   variables(
-    :header => node['file']['header'].gsub('@filename', t.name).
-      gsub('@hostname', node['hostname'])
+    :header => node['file']['header'].gsub('@filename', t.name)
+      .gsub('@hostname', node['hostname'])
   )
   action  :create
 end # template
