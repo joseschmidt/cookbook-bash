@@ -7,8 +7,7 @@ describe 'bash::chef_privileges' do
   it 'should create file owned by root:root' do
     file = '/etc/chef/encrypted_data_bag_secret'
     expect(chef_run).to create_file(file)
-    expect(chef_run.file(file).owner).to eq('root')
-    expect(chef_run.file(file).group).to eq('root')
+      .with(:owner => 'root', :group => 'root')
   end # it
 
 end # describe
