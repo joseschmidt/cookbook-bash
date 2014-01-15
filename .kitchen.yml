@@ -32,4 +32,4 @@ suites:
       - recipe[bash::default]
     attributes:
       file:
-        header: 'fake'
+        header: '# fake'
