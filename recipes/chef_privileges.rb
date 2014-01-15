@@ -20,6 +20,11 @@
 # limitations under the License.
 #
 
+directory '/etc/chef' do
+  owner 'root'
+  group 'root'
+end # directory
+
 file '/etc/chef/encrypted_data_bag_secret' do
   owner 'root'
   group 'root'
