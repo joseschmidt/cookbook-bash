@@ -4,7 +4,7 @@ require 'spec_helper'
 describe 'bash::chef_privileges' do
   let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
 
-  it 'should create file owned by root:root' do
+  it 'creates file owned by root:root' do
     file = '/etc/chef/encrypted_data_bag_secret'
     expect(chef_run).to create_file(file)
       .with(:owner => 'root', :group => 'root')

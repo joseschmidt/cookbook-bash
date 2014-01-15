@@ -10,7 +10,7 @@ describe 'bash::profile' do
     end.converge(described_recipe)
   end # let
 
-  it 'should create /etc/profile.d/jhx_profile.sh owned by root:root' do
+  it 'creates /etc/profile.d/jhx_profile.sh owned by root:root' do
     file = '/etc/profile.d/jhx_profile.sh'
     expect(chef_run).to create_template(file)
       .with(:owner => 'root', :group => 'root')
