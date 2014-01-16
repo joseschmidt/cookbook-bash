@@ -16,7 +16,7 @@ describe 'bash::git_setup' do
     end # it
 
     it 'matches expected content' do
-      expect(subject.content).to match(/\[alias\]/)
+      expect(subject.content).to match('[alias]')
     end # it
   end # context
 
