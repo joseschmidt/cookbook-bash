@@ -33,17 +33,17 @@ Development
 
         $ git clone git@github.com:jhx/COOKBOOK.git
 
-1. Install the dependencies using bundler:
+2. Install the dependencies using bundler:
 
         $ bundle install
 
-1. Create a branch for your changes:
+3. Create a branch for your changes:
 
         $ git checkout -b my_bug_fix
 
-1. Make any changes
-1. Write tests to support those changes. It is highly recommended you write both unit and integration tests.
-1. Run the tests:
+4. Make any changes
+5. Write tests to support those changes. It is highly recommended you write both unit and integration tests.
+6. Run the tests:
 
     - `bundle exec rake`
 
@@ -55,7 +55,7 @@ Development
     - `bundle exec rake chefspec`
     - `bundle exec rake kitchen`
 
-1. Assuming the tests pass, open a Pull Request on GitHub
+7. Assuming the tests pass, open a Pull Request on GitHub
 
 
 Directory structure
