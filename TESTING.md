@@ -45,15 +45,15 @@ Development
 1. Write tests to support those changes. It is highly recommended you write both unit and integration tests.
 1. Run the tests:
 
-      - `bundle exec rake`
+    - `bundle exec rake`
 
     or run the tests individually:
 
-      - `bundle exec rake knife`
-      - `bundle exec rake rubocop`
-      - `bundle exec rake foodcritic`
-      - `bundle exec rake chefspec`
-      - `bundle exec rake kitchen`
+    - `bundle exec rake knife`
+    - `bundle exec rake rubocop`
+    - `bundle exec rake foodcritic`
+    - `bundle exec rake chefspec`
+    - `bundle exec rake kitchen`
 
 7. Assuming the tests pass, open a Pull Request on GitHub
 
