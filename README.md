@@ -39,13 +39,13 @@ This recipe includes the remaining recipes.
 This recipe installs git convenience tools.
 
 ### path_opt_vagrant_ruby_bin
-This recipe removes a deprecated path in `profile.d/`.
+This recipe removes a deprecated path in `/etc/profile.d/`.
 
 ### path_sbin
-This recipe removes a deprecated path in `profile.d/`.
+This recipe removes a deprecated path in `/etc/profile.d/`.
 
 ### path_usr_sbin
-This recipe removes a deprecated path in `profile.d/`.
+This recipe removes a deprecated path in `/etc/profile.d/`.
 
 ### profile
 This recipe creates a custom global bash profile.
