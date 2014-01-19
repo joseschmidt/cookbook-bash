@@ -1,5 +1,5 @@
 bash Cookbook
-==================
+=============
 [![Build Status](https://travis-ci.org/jhx/cookbook-bash.png?branch=master)](https://travis-ci.org/jhx/cookbook-bash)
 
 Configures privileges, profiles, and paths.
