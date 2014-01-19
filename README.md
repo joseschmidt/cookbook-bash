@@ -15,7 +15,7 @@ The following platforms are supported and tested under test kitchen:
 
 - CentosOS 5.10, 6.5
 
-Other RHEL family distributions are assumed to work.
+Other RHEL family distributions are assumed to work. See TESTING.md for information about running tests in Opscode's Test Kitchen.
 
 
 Attributes
