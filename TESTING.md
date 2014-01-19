@@ -55,7 +55,7 @@ Development
     - `bundle exec rake chefspec`
     - `bundle exec rake kitchen`
 
-7. Assuming the tests pass, open a Pull Request on GitHub
+1. Assuming the tests pass, open a Pull Request on GitHub
 
 
 Directory structure
@@ -74,7 +74,7 @@ Below is the structure of the `spec` and `test` directories:
     └── integration                     # integration tests
         ├── default                     # suite (based on recipe)
         │   └── serverspec              # busser
-        │       └── *_spec.rb           # suite tests
+        │       └── *_spec.rb           # suite specs
         └── helpers
             └── serverspec
                 └── spec_helper.rb
