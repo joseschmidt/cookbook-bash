@@ -11,7 +11,7 @@ Requirements
 No dependencies.
 
 ### Platforms
-The following platforms are supported and tested under test kitchen:
+The following platforms are supported and tested under Test Kitchen:
 
 - CentosOS 5.10, 6.5
 
