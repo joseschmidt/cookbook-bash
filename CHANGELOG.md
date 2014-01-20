@@ -5,7 +5,7 @@ CHANGELOG
 ------------------
 
 - `NEW` add emeril gem to publish cookbook | [#58][]
-- `IMPROVE` update CHANGELOG | [#55][]
+- `IMPROVE` update CHANGELOG | [#55][] [#56][]
 - `IMPROVE` update Gemfile to remove redundant gems | [#39][]
 - `IMPROVE` require rspec expect syntax | [#35][] [#41][]
 - `NEW` add [TESTING](TESTING.md) | [#29][] [#30][] [#31][] [#32][] [#33][] [#50][]
@@ -63,3 +63,5 @@ Legend
 [#52]: https://github.com/jhx/cookbook-bash/issues/52
 [#53]: https://github.com/jhx/cookbook-bash/issues/53
 [#55]: https://github.com/jhx/cookbook-bash/issues/55
+[#56]: https://github.com/jhx/cookbook-bash/issues/56
+[#58]: https://github.com/jhx/cookbook-bash/issues/58
