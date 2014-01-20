@@ -4,6 +4,7 @@ CHANGELOG
 0.2.0 / 2014-01-19
 ------------------
 
+- `NEW` add emeril gem to publish cookbook | [#58][]
 - `IMPROVE` update CHANGELOG | [#55][]
 - `IMPROVE` update Gemfile to remove redundant gems | [#39][]
 - `IMPROVE` require rspec expect syntax | [#35][] [#41][]
