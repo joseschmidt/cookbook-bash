@@ -27,9 +27,9 @@ platforms:
       box: opscode-centos-6.5-chef-11.8.2
 
 suites:
-  - name: default
+  - name: bash
     run_list:
-      - recipe[bash::default]
+      - 'recipe[bash]'
     attributes:
       file:
         header: '# fake'
