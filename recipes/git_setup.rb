@@ -30,7 +30,7 @@ end # cookbook_file
 
 # install git completion script
 remote_file '/etc/profile.d/git-completion.sh' do
-  source 'https://raw.github.com/git/git/master/contrib/completion/' +
+  source 'https://raw.github.com/git/git/master/contrib/completion/' \
     'git-completion.bash'
   owner  'root'
   group  'root'
@@ -40,7 +40,7 @@ end # remote_file
 
 # install git prompt script
 remote_file '/etc/profile.d/git-prompt.sh' do
-  source 'https://raw.github.com/git/git/master/contrib/completion/' +
+  source 'https://raw.github.com/git/git/master/contrib/completion/' \
     'git-prompt.sh'
   owner  'root'
   group  'root'
