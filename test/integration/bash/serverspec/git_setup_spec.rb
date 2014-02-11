@@ -2,7 +2,7 @@
 require 'spec_helper'
 
 describe 'bash::git_setup' do
-  context file('/etc/gitconfig') do
+  describe file('/etc/gitconfig') do
     it 'is owned by root' do
       expect(subject).to be_owned_by('root')
     end # it
@@ -18,9 +18,9 @@ describe 'bash::git_setup' do
     it 'matches expected content' do
       expect(subject.content).to match('[alias]')
     end # it
-  end # context
+  end # describe
 
-  context file('/etc/profile.d/git-completion.sh') do
+  describe file('/etc/profile.d/git-completion.sh') do
     it 'is owned by root' do
       expect(subject).to be_owned_by('root')
     end # it
@@ -37,9 +37,9 @@ describe 'bash::git_setup' do
       expect(subject.content)
         .to match('bash/zsh completion support for core Git')
     end # it
-  end # context
+  end # describe
 
-  context file('/etc/profile.d/git-prompt.sh') do
+  describe file('/etc/profile.d/git-prompt.sh') do
     it 'is owned by root' do
       expect(subject).to be_owned_by('root')
     end # it
@@ -55,6 +55,6 @@ describe 'bash::git_setup' do
     it 'matches expected content' do
       expect(subject.content).to match('bash/zsh git prompt support')
     end # it
-  end # context
+  end # describe
 
 end # describe

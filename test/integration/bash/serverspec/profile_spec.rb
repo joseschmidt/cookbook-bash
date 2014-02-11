@@ -2,7 +2,7 @@
 require 'spec_helper'
 
 describe 'bash::profile' do
-  context file('/etc/profile.d/jhx_profile.sh') do
+  describe file('/etc/profile.d/jhx_profile.sh') do
     it 'is owned by root' do
       expect(subject).to be_owned_by('root')
     end # it
@@ -18,5 +18,5 @@ describe 'bash::profile' do
     it 'matches expected content' do
       expect(subject.content).to match('# fake')
     end # it
-  end # context
+  end # describe
 end # describe

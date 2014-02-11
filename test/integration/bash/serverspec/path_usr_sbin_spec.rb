@@ -2,9 +2,9 @@
 require 'spec_helper'
 
 describe 'bash::path_usr_sbin' do
-  context file('/etc/profile.d/path_usr_sbin.sh') do
+  describe file('/etc/profile.d/path_usr_sbin.sh') do
     it 'is not a file' do
       expect(subject).to_not be_file
     end # it
-  end # context
+  end # describe
 end # describe
