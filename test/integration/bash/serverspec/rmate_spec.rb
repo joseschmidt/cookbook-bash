@@ -2,7 +2,7 @@
 require 'spec_helper'
 
 describe 'bash::rmate' do
-  context file('/usr/local/bin/rmate') do
+  describe file('/usr/local/bin/rmate') do
     it 'is owned by root' do
       expect(subject).to be_owned_by('root')
     end # it
@@ -18,5 +18,5 @@ describe 'bash::rmate' do
     it 'matches expected content' do
       expect(subject.content).to match('rmate version 1.5 \(2012-09-19\)')
     end # it
-  end # context
+  end # describe
 end # describe
