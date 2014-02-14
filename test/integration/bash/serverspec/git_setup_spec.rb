@@ -15,8 +15,8 @@ describe 'bash::git_setup' do
       expect(subject).to be_mode(644)
     end # it
 
-    it 'matches expected content' do
-      expect(subject.content).to match('[alias]')
+    it 'includes expected content' do
+      expect(subject.content).to include('[alias]')
     end # it
   end # describe
 
@@ -33,9 +33,10 @@ describe 'bash::git_setup' do
       expect(subject).to be_mode(644)
     end # it
 
-    it 'matches expected content' do
-      expect(subject.content)
-        .to match('bash/zsh completion support for core Git')
+    it 'includes expected content' do
+      expect(subject.content).to include(
+        'bash/zsh completion support for core Git'
+      )
     end # it
   end # describe
 
@@ -52,8 +53,8 @@ describe 'bash::git_setup' do
       expect(subject).to be_mode(644)
     end # it
 
-    it 'matches expected content' do
-      expect(subject.content).to match('bash/zsh git prompt support')
+    it 'includes expected content' do
+      expect(subject.content).to include('bash/zsh git prompt support')
     end # it
   end # describe
 

@@ -15,8 +15,8 @@ describe 'bash::rmate' do
       expect(subject).to be_mode(755)
     end # it
 
-    it 'matches expected content' do
-      expect(subject.content).to match('rmate version 1.5 \(2012-09-19\)')
+    it 'includes expected version string' do
+      expect(subject.content).to include('rmate version 1.5 (2012-09-19)')
     end # it
   end # describe
 end # describe
