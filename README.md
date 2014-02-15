@@ -1,6 +1,7 @@
 bash Cookbook
 =============
 [![Build Status](https://travis-ci.org/jhx/cookbook-bash.png?branch=master)](https://travis-ci.org/jhx/cookbook-bash)
+[![Dependency Status](https://gemnasium.com/jhx/cookbook-bash.png)](https://gemnasium.com/jhx/cookbook-bash)
 
 Configures privileges, profiles, and paths.
 
