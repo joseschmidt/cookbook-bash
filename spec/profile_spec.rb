@@ -8,11 +8,16 @@ describe 'bash::profile' do
     end.converge(described_recipe)
   end # let
 
-  it 'creates /etc/profile.d/jhx_profile.sh owned by root:root' do
-    file = '/etc/profile.d/jhx_profile.sh'
-    expect(chef_run).to create_template(file)
-      .with(:owner => 'root', :group => 'root')
-    expect(chef_run).to render_file(file).with_content('node.file.header')
-  end # it
+  describe '/etc/profile.d/jhx_profile.sh' do
+    it 'renders file with expected header' do
+      expect(chef_run).to render_file(subject)
+        .with_content('node.file.header')
+    end # it
+
+    it 'creates template with expected owner, group' do
+      expect(chef_run).to create_template(subject)
+        .with(:owner => 'root', :group => 'root')
+    end # it
+  end # describe
 
 end # describe
