@@ -1,4 +1,4 @@
-# coding: utf-8
+# encoding: utf-8
 #
 # Cookbook Name:: bash
 # Recipe:: path_opt_vagrant_ruby_bin
