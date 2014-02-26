@@ -12,9 +12,9 @@ describe 'bash::chef_privileges' do
   end # describe
 
   describe '/etc/chef/encrypted_data_bag_secret' do
-    it 'creates file with expected owner, group' do
+    it 'creates file with expected owner, group, mode' do
       expect(chef_run).to create_file(subject)
-        .with(:owner => 'root', :group => 'root')
+        .with(:owner => 'root', :group => 'root', :mode => '0600')
     end # it
   end # describe
 
