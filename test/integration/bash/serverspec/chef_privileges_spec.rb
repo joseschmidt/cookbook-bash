@@ -2,7 +2,7 @@
 require 'spec_helper'
 
 describe 'bash::chef_privileges' do
-  describe file('/etc/chef/') do
+  describe file('/etc/chef') do
     it 'is directory' do
       expect(subject).to be_directory
     end # it
